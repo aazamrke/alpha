@@ -1,0 +1,18 @@
+interactive shell
+$ docker exec -it container_id python manage.py createsuperuser
+
+Docker Running Container
+$ docker ps
+
+docker run the cmd
+$docker run image_name
+
+
+celery-beat:
+    build: .
+    command: celery -A rest beat -l info
+    volumes:
+      - .:/alphavantage
+    depends_on:
+      - db
+      - redis

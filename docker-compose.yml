@@ -1,0 +1,38 @@
+version: "3.3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  redis:
+    image: "redis:alpine"
+  web:
+    build: .
+    command: bash -c "python /alphavantage/manage.py makemigrations --noinput && python /alphavantage/manage.py migrate --noinput && python /alphavantage/manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/alphavantage
+    ports:
+
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+  celery:
+    build: .
+    command: celery -A api worker -l info
+    volumes:
+      - .:/alphavantage
+    depends_on:
+      - db
+      - redis
+  celery-beat:
+    build: .
+    command: celery -A api beat -l info
+    volumes:
+      - .:/alphavantage
+    depends_on:
+      - db
+      - redis

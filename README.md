@@ -39,6 +39,12 @@ The purpose of this project is to develop an API using Django that fetches the p
 
 ![Screenshot from 2021-10-31 22-26-40](https://user-images.githubusercontent.com/11086459/139596535-3705cea7-de6f-4741-be03-250fd878a037.png)
 
+## Code Screenshots
+![Screenshot from 2021-10-31 23-54-27](https://user-images.githubusercontent.com/11086459/139596790-dd66ce01-94f7-4fea-8e83-d5b6fba51be9.png)
+![Screenshot from 2021-10-31 23-52-32](https://user-images.githubusercontent.com/11086459/139596801-f885a6c4-98c3-4b38-b862-403944395220.png)
+![Screenshot from 2021-10-31 23-52-19](https://user-images.githubusercontent.com/11086459/139596810-2701d563-ca54-4219-bfb6-3c9b5f2cc032.png)
+![Screenshot from 2021-10-31 23-52-05](https://user-images.githubusercontent.com/11086459/139596814-bc7ecc17-1f31-4b62-8f85-a29887e789b5.png)
+![Screenshot from 2021-10-31 23-51-51](https://user-images.githubusercontent.com/11086459/139596821-7910d7da-ee0f-4cb8-b8db-5f9d148cccc0.png)
 
 
 
